@@ -34,4 +34,20 @@ class UserTest < ActiveSupport::TestCase
   #   user = User.new(email: users(:one).email, password_digest: "123qwe", role: 5)
   #   assert user.valid?
   # end
+
+  # ---------------------------------------------------------------------------------
+
+  # test Active Model has_secure_password
+
+  # success case
+  # test 'valid: User with valid password' do
+  #   user = User.new(email: "user0000@test.com", password: "123qwe", role: 1)
+  #   assert user.valid?
+  # end
+
+  # fail case
+  # test 'valid: User with invalid password' do
+  #   user = User.new(email: "user0000@test.com", password: "", role: 1)
+  #   assert user.valid?
+  # end
 end
